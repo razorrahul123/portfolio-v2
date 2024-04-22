@@ -2,7 +2,9 @@
 import React, { useEffect, useRef } from "react";
 // import styled from "styled-components";
 import { srConfig, email } from "../../config";
-import sr from "../../utils/sr";
+// import sr from "../../utils/sr";
+// import useScrollReveal from "../../utils/sr";
+import ScrollReveal from "scrollreveal";
 import { usePrefersReducedMotion } from "../../hooks";
 
 // const StyledContactSection = styled.section`
@@ -45,14 +47,14 @@ import { usePrefersReducedMotion } from "../../hooks";
 const Contact = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
-
+  // const sr = useScrollReveal();
   useEffect(() => {
-    if (typeof window !== undefined) {
+    if (window && typeof window && typeof window !== undefined) {
       if (prefersReducedMotion) {
         return;
       }
 
-      sr.reveal(revealContainer.current, srConfig());
+      ScrollReveal().reveal(revealContainer.current, srConfig());
     }
   }, []);
 

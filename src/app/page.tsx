@@ -2,24 +2,24 @@
 // import Image from "next/image";
 // import ThemeSwitch from "./components/ThemeSwitch";
 import NavBar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Jobs from "./components/Jobs";
-import Contact from "./components/Contact";
+// import Hero from "./components/Hero";
+// import About from "./components/About";
+// import Jobs from "./components/Jobs";
+// import Contact from "./components/Contact";
 import dynamic from "next/dynamic";
 import { Suspense, useState, useEffect } from "react";
-// const Hero = dynamic(() => import("./components/Hero"), {
-//   ssr: false,
-// });
-// const About = dynamic(() => import("./components/About"), {
-//   ssr: false,
-// });
-// const Jobs = dynamic(() => import("./components/Jobs"), {
-//   ssr: false,
-// });
-// const Contact = dynamic(() => import("./components/Contact"), {
-//   ssr: false,
-// });
+const Hero = dynamic(() => import("./components/Hero"), {
+  ssr: false,
+});
+const About = dynamic(() => import("./components/About"), {
+  ssr: false,
+});
+const Jobs = dynamic(() => import("./components/Jobs"), {
+  ssr: false,
+});
+const Contact = dynamic(() => import("./components/Contact"), {
+  ssr: false,
+});
 export default function Home() {
   const [loading, setLoading] = useState(true);
 

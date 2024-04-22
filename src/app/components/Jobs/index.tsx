@@ -5,7 +5,9 @@ import { CSSTransition } from "react-transition-group";
 // import styled from "styled-components";
 import { srConfig } from "../../config";
 import { KEY_CODES } from "../../utils";
-import sr from "../../utils/sr";
+// import sr from "../../utils/sr";
+import ScrollReveal from "scrollreveal";
+// import useScrollReveal from "../../utils/sr";
 import { usePrefersReducedMotion } from "../../hooks";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 import { data } from "./data";
@@ -180,7 +182,7 @@ const Jobs = () => {
   // useRef<(HTMLDivElement | null)[]>([])
   // const tabs = jobsData.map((_x) => useRef(null));
   const tabs = useRef<(HTMLDivElement | null)[]>([]);
-
+  // const sr = useScrollReveal();
   // const tabs = jobsData.map((_x) => useRef(null));
   const tabsPanels = jobsData.map((_x) => useRef(null));
   const revealContainer = useRef(null);
@@ -192,7 +194,7 @@ const Jobs = () => {
         return;
       }
 
-      sr.reveal(revealContainer.current, srConfig());
+      ScrollReveal().reveal(revealContainer.current, srConfig());
     }
   }, []);
 

@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { srConfig } from "../../config";
-import sr from "../../utils/sr";
+// import useScrollReveal from "../../utils/sr";
+import ScrollReveal from "scrollreveal";
 import { usePrefersReducedMotion } from "../../hooks";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
@@ -10,14 +11,21 @@ import "./index.css";
 const About = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+  // const sr = useScrollReveal();
+  // console.log("window: ", window);
 
   useEffect(() => {
     if (typeof window !== undefined) {
+      console.log("window: ", window);
+
       if (prefersReducedMotion) {
         return;
       }
+      // if(scr)
 
-      sr.reveal(revealContainer.current, srConfig());
+      console.log("ScrollReveal: ", ScrollReveal);
+
+      // ScrollReveal().reveal(revealContainer.current, srConfig());
     }
   }, []);
 
