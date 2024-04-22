@@ -1,0 +1,61 @@
+export const data = [
+  {
+    id: 1,
+    title: "Senior Software Engineer - 2",
+    org: "MakeMyTrip",
+    orgHref: "https://www.makemytrip.com/",
+    roles: [
+      "Developed a Frontend UI Library with Storybook for desktop, mobile and PWA utilizing atomic design principles, widely adopted across all Lines of Business (LOBs) to minimize bundle size and increase the code reusability.",
+      "Improved page speed score on PWA listing by 20% through the implementation of code splitting, lazy loading and caching techniques.",
+      "Collaborated with the design and product teams on the unification of the GoIbibo Progressive Web App (PWA), resulting in a 4% increase in user engagement.",
+      "Developed makemytrip campus hiring platform, which attracts over 500 daily visits. This platform streamlines the application process for students seeking internships and placement opportunities.",
+      "Led the development of complete UI overhaul of the Details Page, Search Result Page (SRP), and Room selected page for GoIbibo.",
+    ],
+    range: "Nov 2021 - Present",
+  },
+  {
+    id: 2,
+    title: "Senior Software Engineer",
+    org: "UrbanPiper",
+    orgHref: "https://www.urbanpiper.com/",
+    roles: [
+      "Developed Prime POS system utilized by well-known food chains like Subway, Pizza Hut, Chilli’s and several cloud kitchens. This system efficiently handles billing and KOT management, consolidates online order tracking onto a single screen, monitors inventory, and tracks operations and sales data through a centralized dashboard.",
+      "Developed a self-serve web app using ReactJS from scratch which is used in the UAE region to onboard new clients. • Integrated Sentry for error tracking and monitoring to increase product stability.",
+      "Improved the overall build process and reduced the bundle size by 20% using webpack. Added multi-language support using i18n. • Integrated PineLabs payments with POS system to facilitate seamless online payments.",
+      "Created unit test cases using Jest and react testing library achieving a test coverage exceeding 80%.",
+      "Reimplemented the service worker to deliver seamless web app updates for the Prime Pos.",
+    ],
+    range: "Sept 2020 - Nov 2021",
+  },
+  {
+    id: 3,
+    title: "Software Development Engineer",
+    org: "Xcelerator",
+    orgHref: "https://xcelerator.ninja/",
+    roles: [
+      "Developed xcelerator, an education platform built using ReactJS which is used by teachers, students, mentors, and institutes.",
+      "Added comments support to the platform which increased user engagement by 50%.",
+    ],
+    range: "Jan 2020 - Sept 2020",
+  },
+  {
+    id: 4,
+    title: "Software Engineer",
+    org: "Cowrks",
+    orgHref: "https://www.cowrks.com/",
+    roles: [
+      "Worked on the development of cowrks as well as convergehere webapps and internally used products using React and Redux.",
+      "Refactored and migrated Class components to Functional components using React Hooks.",
+      "Developed a web scraping tool utilizing Puppeteer which helped in identifying the broken links and images within the app.",
+    ],
+    range: "Jun 2019 - Jan 2020",
+  },
+  {
+    id: 5,
+    title: "Data Science Research Analyst",
+    org: "Shyftpath",
+    orgHref: "https://www.linkedin.com/company/unlockedhr/",
+    roles: ["Developed insightful data dashboards using Tableau."],
+    range: "Dec 2018 - Jun 2019",
+  },
+];
