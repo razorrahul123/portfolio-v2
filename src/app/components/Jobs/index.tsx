@@ -177,7 +177,11 @@ const Jobs = () => {
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
   // const tabs = useRef([]);
-  const tabs = jobsData.map((_x) => useRef(null));
+  // useRef<(HTMLDivElement | null)[]>([])
+  // const tabs = jobsData.map((_x) => useRef(null));
+  const tabs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // const tabs = jobsData.map((_x) => useRef(null));
   const tabsPanels = jobsData.map((_x) => useRef(null));
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -303,7 +307,7 @@ const Jobs = () => {
                     ref={tabsPanels[i]}
                     id={`panel-${i}`}
                     role="tabpanel"
-                    tabIndex={activeTabId === i ? "0" : "-1"}
+                    // tabIndex={activeTabId === i ? "0" : "-1"}
                     aria-labelledby={`tab-${i}`}
                     aria-hidden={activeTabId !== i}
                     hidden={activeTabId !== i}

@@ -158,6 +158,7 @@ const NavBar = ({}) => {
   console.log("isHome: ", isHome);
   const [isMounted, setIsMounted] = useState(!isHome);
   //   console.log("isMounted: ", isMounted);
+  // const scrollDirection = useScrollDirection("down");
   const scrollDirection = useScrollDirection("down");
   console.log("scrollDirection: ", scrollDirection);
   const [scrolledToTop, setScrolledToTop] = useState(true);
